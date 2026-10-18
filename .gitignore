@@ -1,0 +1,35 @@
+# compiled output
+/dist
+/node_modules
+*.tsbuildinfo
+
+# logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# env
+.env
+.env.local
+.env.*.local
+
+apps/**/*.yml
+!apps/**/*.yml.example
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+
+# coverage
+/coverage
+/.nyc_output
+
+.tmp/
