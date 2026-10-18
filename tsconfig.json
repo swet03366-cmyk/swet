@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolvePackageJsonExports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "types": ["vitest/globals", "node"],
+    "paths": {
+      "@swet/common": ["./libs/swet-common-lib/src"],
+      "@swet/common/*": ["./libs/swet-common-lib/src/*"],
+      "@swet/integration": ["./libs/swet-integration-lib/src"],
+      "@swet/integration/*": ["./libs/swet-integration-lib/src/*"],
+      "@swet/notification": ["./libs/swet-notification-lib/src"],
+      "@swet/notification/*": ["./libs/swet-notification-lib/src/*"],
+      "apps/swet-service/src/*": ["./apps/swet-service/src/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/swet-service/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/swet-notification-service/tsconfig.app.json"
+    },
+    {
+      "path": "./libs/swet-common-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/swet-integration-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./libs/swet-notification-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}
